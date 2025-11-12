@@ -1,3 +1,13 @@
+def calculate_nalog_and_income():
+    """
+    Вычисляет сумму налога и итоговый доход после вычета налога.
+    Args:
+        full_income: Годовой доход.
+        nalog: Процент налога.
+    Returns: 
+        float: Сумма рассчитанного налога.
+        float: Сумма дохода после вычета налога.
+    """
 full_income = float(input('Введите годовой доход '))
 nalog = 0.13
 your_nalog = full_income*nalog
@@ -6,3 +16,4 @@ rub = 'руб.'
 print(f'Общая сумма дохода: {full_income:.2f} {rub}')
 print(f'Сумма рассчитанного налога: {your_nalog:.2f} {rub}')
 print(f'Сумма на руки после вычета налога: {final_income:.2f} {rub}')
+
